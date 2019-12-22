@@ -2,9 +2,24 @@
 
 > boilerplate for upcoming projects
 
+## ToDo
+
+```bash
+- [ ] Update gitnore (node, sass, storyblok, macos)
+- [ ] Sass (or try post?)
+- [ ] linting + prettier configurations
+- [ ] Install testing library (jest?)
+- [ ] Markdown Component
+- [ ] Image optimalisation (compression + rendering)
+- [ ] Scroll animation / animationtriggering solution (vanilla/velocity/etc)
+- [ ] Netlify server settings
+- [ ] SSL redirection (or via Netlify?)
+- [ ] Google Analytics
+```
+
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install
 
@@ -19,4 +34,4 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) and [Storyblok docs](https://www.storyblok.com/docs).
