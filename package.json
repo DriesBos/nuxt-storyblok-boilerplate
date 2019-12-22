@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-storyblok-boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate for upcoming projects",
+  "author": "Dries Bos",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0",
+    "@nuxtjs/pwa": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
