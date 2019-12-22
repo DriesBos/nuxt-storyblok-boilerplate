@@ -1,0 +1,42 @@
+@import '~/assets/styling/variables.sass'
+
+// @font-face
+//   font-family: ''
+//   src: url('~assets/fonts/') format('')
+//   font-weight: normal
+//   font-style: normal
+
+body
+  // https://css-tricks.com/snippets/css/fluid-typography/
+  font-size: 17px
+  font-size: calc(19px + (22 - 19) * ((100vw - 700px) / (1400 - 700)))
+
+h1, h2, h3, p
+  max-width: $font-maxwidth
+  overflow-wrap: normal
+  word-wrap: normal
+  word-break: normal
+  hyphens: normal
+
+h1, h2, h3, p, a, a:link, a:visited, a:hover, a:active, span, input
+  font-family: "", Helvetica, Arial, sans-serif
+  font-size: 1em
+  line-height: 1.5
+  color: $font-color
+  font-style: normal
+  font-weight: normal
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+a
+  color: $font-color
+  text-decoration: none
+
+.ellipsis
+  overflow: hidden
+  min-width: 0
+  text-overflow: ellipsis
+  h1, h2, h3, p, a
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
