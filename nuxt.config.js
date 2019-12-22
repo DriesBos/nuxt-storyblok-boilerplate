@@ -34,8 +34,10 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/pwa"],
-
+  modules: [
+    ["@nuxtjs/pwa"],
+    ["@nuxtjs/google-tag-manager", { id: "GTM-XXXXXXX" }]
+  ],
   /*
    ** Build configuration
    */
