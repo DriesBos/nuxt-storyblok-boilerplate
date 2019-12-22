@@ -9,9 +9,9 @@
 - [X] Install SASS deps
 - [X] Configure linting + prettier
 - [ ] Install testing library (jest?)
-- [X] Install TypeScript
+- [X] Init TypeScript
 - [X] Markdown Component
-- [ ] Image optimalisation (compression + rendering)
+- [X] Image optimalisation (compression + rendering)
 - [ ] Scroll animation / animationtriggering solution (vanilla/velocity/etc)
 - [ ] Init Netlify/Heroku/ZEIT
 - [ ] SSL redirection (or via server)
