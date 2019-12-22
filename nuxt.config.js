@@ -36,7 +36,11 @@ module.exports = {
    */
   modules: [
     ["@nuxtjs/pwa"],
-    ["@nuxtjs/google-tag-manager", { id: "GTM-XXXXXXX" }]
+    ["@nuxtjs/google-tag-manager", { id: "GTM-XXXXXXX" }],
+    [
+      "@bazzite/nuxt-optimized-images",
+      { optimizedImages: { optimizeImagesInDev: false } } // Test compression by setting to true first
+    ]
   ],
   /*
    ** Build configuration
