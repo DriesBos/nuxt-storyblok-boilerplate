@@ -9,8 +9,8 @@
 - [X] Install SASS deps
 - [X] Configure linting + prettier
 - [ ] Install testing library (jest?)
-- [ ] Installing TypeScript
-- [ ] Markdown Component
+- [X] Install TypeScript
+- [X] Markdown Component
 - [ ] Image optimalisation (compression + rendering)
 - [ ] Scroll animation / animationtriggering solution (vanilla/velocity/etc)
 - [ ] Netlify server settings
