@@ -15,7 +15,7 @@
 - [ ] Scroll animation / animationtriggering solution (vanilla/velocity/etc)
 - [ ] Init Netlify/Heroku/ZEIT
 - [ ] SSL redirection (or via server)
-- [ ] Google Analytics -> Google gtag
+- [X] Google Analytics -> Google gtag
 ```
 
 ## Build Setup
