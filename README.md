@@ -13,9 +13,9 @@
 - [X] Markdown Component
 - [ ] Image optimalisation (compression + rendering)
 - [ ] Scroll animation / animationtriggering solution (vanilla/velocity/etc)
-- [ ] Netlify server settings
-- [ ] SSL redirection (or via Netlify?)
-- [ ] Google Analytics
+- [ ] Init Netlify/Heroku/ZEIT
+- [ ] SSL redirection (or via server)
+- [ ] Google Analytics -> Google gtag
 ```
 
 ## Build Setup
@@ -39,6 +39,12 @@ $ npm run lint
 
 # Lint fixing
 $ npm run lintfix
+```
+
+## Nuxt Config
+
+```bash
+* Add Google Tag Manager ID
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) and [Storyblok docs](https://www.storyblok.com/docs).
