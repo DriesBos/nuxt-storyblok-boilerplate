@@ -16,6 +16,9 @@
     "@nuxtjs/pwa": "^2.6.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "css-loader": "^3.4.0",
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^8.0.0"
   }
 }
