@@ -45,6 +45,13 @@ module.exports = {
     [
       "@bazzite/nuxt-optimized-images",
       { optimizedImages: { optimizeImagesInDev: true } } // Test compression by setting to true first
+    ],
+    [
+      "storyblok-nuxt",
+      {
+        accessToken: "YOUR_PREVIEW_TOKEN",
+        cacheProvider: "memory"
+      }
     ]
   ],
   /*
