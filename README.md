@@ -8,7 +8,7 @@
 - [X] Update gitnore (vue,osx,node,nuxt,sass,macos)
 - [X] Install SASS deps
 - [X] Configure linting + prettier
-- [ ] Install testing library (jest?)
+- [ ] Init testing (jest?)
 - [X] Init TypeScript
 - [X] Markdown Component
 - [X] Image optimalisation (compression + rendering)
@@ -45,6 +45,8 @@ $ npm run lintfix
 
 ```bash
 * Add Google Tag Manager ID
+* Configure responsive-loader by setting image sizes
+* Test image serving + resizing (temp set optimizeImagesInDev to true).
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) and [Storyblok docs](https://www.storyblok.com/docs).
