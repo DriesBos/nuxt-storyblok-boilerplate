@@ -49,4 +49,13 @@ $ npm run lintfix
 * Test image serving + resizing (temp set optimizeImagesInDev to true).
 ```
 
+## Heroku Config
+
+```bash
+$ heroku config:set NPM_CONFIG_PRODUCTION=false
+$ heroku config:set HOST=0.0.0.0
+$ heroku config:set NODE_ENV=production
+# Continue to set Google GTM + Storyblok API Keys
+```
+
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) and [Storyblok docs](https://www.storyblok.com/docs).
