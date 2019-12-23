@@ -24,7 +24,12 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    "@/assets/styles/body.sass",
+    "@/assets/styles/transitions.sass",
+    "@/assets/styles/typography.sass",
+    "@/assets/styles/variables.sass"
+  ],
 
   /*
    ** Plugins to load before mounting the App
@@ -39,7 +44,7 @@ module.exports = {
     ["@nuxtjs/google-tag-manager", { id: "GTM-XXXXXXX" }],
     [
       "@bazzite/nuxt-optimized-images",
-      { optimizedImages: { optimizeImagesInDev: false } } // Test compression by setting to true first
+      { optimizedImages: { optimizeImagesInDev: true } } // Test compression by setting to true first
     ]
   ],
   /*
