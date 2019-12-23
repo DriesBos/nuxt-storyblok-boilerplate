@@ -58,4 +58,4 @@ $ heroku config:set NODE_ENV=production
 # Continue to set Google GTM + Storyblok API Keys
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) and [Storyblok docs](https://www.storyblok.com/docs).
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) and [Storyblok docs](https://www.storyblok.com/docs) and [Heroku docs](https://devcenter.heroku.com/categories/reference).
