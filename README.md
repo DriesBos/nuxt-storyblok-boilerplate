@@ -16,6 +16,7 @@
 - [ ] Init Netlify/Heroku/ZEIT
 - [ ] SSL redirection (or via server)
 - [X] Google Analytics -> Google gtag
+- [ ] Connect meta + seo data to StoryBlokCMS
 ```
 
 ## Build Setup
