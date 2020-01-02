@@ -1,5 +1,6 @@
 <template>
   <section>
+    <!-- prettier-ignore -->
     <picture>
       <source :srcset="require('~/assets/images/landscape-1.jpg?webp')" type="image/webp" />
       <source :srcset="require('~/assets/images/landscape-1.jpg')" type="image/jpeg" />
@@ -10,13 +11,13 @@
 
 <script>
 export default {
+  mounted() {
+    this.testingEnvKeys()
+  },
   methods: {
     testingEnvKeys() {
       console.log(process.env.TEST)
     }
-  },
-  mounted() {
-    this.testingEnvKeys()
   }
 }
 </script>
