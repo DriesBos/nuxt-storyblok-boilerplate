@@ -26,6 +26,7 @@ module.exports = {
    ** Global CSS
    */
   css: [
+    "@/assets/styles/reset.css",
     "@/assets/styles/body.sass",
     "@/assets/styles/transitions.sass",
     "@/assets/styles/typography.sass",
