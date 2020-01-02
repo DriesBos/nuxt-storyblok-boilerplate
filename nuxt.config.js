@@ -43,7 +43,7 @@ module.exports = {
    */
   modules: [
     ["@nuxtjs/pwa"],
-    ["@nuxtjs/google-tag-manager", { id: process.env.GOOGLE_GTM }],
+    // ["@nuxtjs/google-tag-manager", { id: process.env.GOOGLE_GTM }],
     [
       "@bazzite/nuxt-optimized-images",
       { optimizedImages: { optimizeImagesInDev: true } } // Test compression by setting to true first
@@ -51,10 +51,11 @@ module.exports = {
     [
       "storyblok-nuxt",
       {
-        accessToken: process.env.PREVIEW,
+        accessToken: "MrMcVxCit5lL9WS95csYUAtt",
         cacheProvider: "memory"
       }
-    ]
+    ],
+    ["@nuxtjs/dotenv"]
   ],
   /*
    ** Build configuration
@@ -75,5 +76,5 @@ module.exports = {
       }
     }
   },
-  buildModules: ["@nuxt/typescript-build"]
+  buildModules: [["@nuxt/typescript-build"]]
 }
