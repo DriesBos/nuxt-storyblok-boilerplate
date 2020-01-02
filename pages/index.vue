@@ -13,15 +13,7 @@
 import storyblokLivePreview from "@/mixins/storyblokLivePreview"
 
 export default {
-  mixins: [storyblokLivePreview],
-  mounted() {
-    this.testingEnvKeys()
-  },
-  methods: {
-    testingEnvKeys() {
-      console.log(process.env.TEST)
-    }
-  }
+  mixins: [storyblokLivePreview]
 }
 </script>
 
