@@ -1,17 +1,8 @@
 <template>
-  <div class="content">
-    <section class="content-work">
-      <p>Project Index</p>
-      <ul>
-        <li v-for="post in stories" :id="post.content.id" :key="post.content.id">
-          <nuxt-link :to="post.full_slug" tag="div">
-            <h2>{{ post.content.title }}</h2>
-            <p>/{{ post.content.year }}</p>
-          </nuxt-link>
-        </li>
-      </ul>
-    </section>
-  </div>
+  <section>
+    <h1>{{ story.content.title }}</h1>
+    <p>{{ story.content.text }}</p>
+  </section>
 </template>
 
 <script>
@@ -20,11 +11,11 @@ import storyblokLivePreview from "@/mixins/storyblokLivePreview"
 export default {
   mixins: [storyblokLivePreview],
   asyncData(context) {
+    let endpoint = `cdn/stories/blog/${context.params.slug}`
+
     return context.app.$storyapi
-      .get("cdn/stories/", {
-        version: "draft",
-        // TODO: Change to path used in CMS
-        starts_with: "projects"
+      .get(endpoint, {
+        version: "draft"
       })
       .then(res => {
         return res.data
@@ -47,11 +38,11 @@ export default {
   },
   data() {
     return {
-      stories: { content: {} }
+      story: { content: {} }
     }
   },
   mounted() {
-    console.log(this.stories)
+    console.log(this.story)
   }
 }
 </script>
