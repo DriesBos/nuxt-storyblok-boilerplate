@@ -58,8 +58,8 @@ module.exports = {
   ],
   generate: {
     routes: function(callback) {
-      const token = `YOUR_TOKEN`
-      const per_page = 10
+      const token = process.env.PREVIEWKEY
+      const per_page = 1000
       const version = "published"
       let cache_version = 0
 
