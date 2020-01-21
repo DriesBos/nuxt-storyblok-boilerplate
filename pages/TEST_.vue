@@ -1,10 +1,10 @@
 <template>
   <div>
     <component
+      :is="story.content.component | dashify"
       v-if="story.content.component"
       :key="story.content._uid"
       :blok="story.content"
-      :is="story.content.component | dashify"
     ></component>
   </div>
 </template>
@@ -37,20 +37,6 @@ const loadData = function({ api, cacheVersion, errorCallback, version, path }) {
 }
 
 export default {
-  data() {
-    return { story: { content: {} } }
-  },
-  mounted() {
-    this.$storybridge.on(["input", "published", "change"], event => {
-      if (event.action == "input") {
-        if (event.story.id === this.story.id) {
-          this.story.content = event.story.content
-        }
-      } else if (!event.slugChanged) {
-        window.location.reload()
-      }
-    })
-  },
   asyncData(context) {
     // Check if we are in the editing mode
     let editMode = false
@@ -81,6 +67,20 @@ export default {
       cacheVersion: context.store.state.cacheVersion,
       errorCallback: context.error,
       path: path
+    })
+  },
+  data() {
+    return { story: { content: {} } }
+  },
+  mounted() {
+    this.$storybridge.on(["input", "published", "change"], event => {
+      if (event.action == "input") {
+        if (event.story.id === this.story.id) {
+          this.story.content = event.story.content
+        }
+      } else if (!event.slugChanged) {
+        window.location.reload()
+      }
     })
   }
 }

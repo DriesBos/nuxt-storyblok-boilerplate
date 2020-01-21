@@ -1,19 +1,16 @@
 <template>
   <section>
     <component
+      :is="story.content.component | dashify"
       v-if="story.content.component"
       :key="story.content._uid"
       :blok="story.content"
-      :is="story.content.component | dashify"
     ></component>
   </section>
 </template>
 
 <script>
 export default {
-  data() {
-    return { story: { content: {} } }
-  },
   asyncData(context) {
     // Check if we are in the editor mode
     let version =
@@ -33,6 +30,9 @@ export default {
           message: res.response.data
         })
       })
+  },
+  data() {
+    return { story: { content: {} } }
   }
 }
 </script>

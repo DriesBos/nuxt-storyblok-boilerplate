@@ -1,9 +1,13 @@
 <template>
-  <div v-editable="blok" class="teaser">{{ blok.headline }}</div>
+  <div v-editable="blok" class="teaser">
+    <p>{{ blok.headline }}</p>
+  </div>
 </template>
 
 <script>
 export default {
-  props: ["blok"]
+  props: {
+    blok: Object
+  }
 }
 </script>

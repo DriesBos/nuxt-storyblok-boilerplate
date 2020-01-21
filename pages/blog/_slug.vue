@@ -42,7 +42,7 @@ export default {
     }
   },
   mounted() {
-    console.log(this.story)
+    // console.log(this.story)
   }
 }
 </script>

@@ -14,10 +14,7 @@ marked.setOptions({
 export default {
   name: "MarkdownItem",
   props: {
-    input: {
-      type: String,
-      required: true
-    }
+    input: String
   },
   computed: {
     compiledMarkdown: function() {

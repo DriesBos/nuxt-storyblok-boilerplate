@@ -1,7 +1,7 @@
 <template>
   <section>
-    <h1>{{ this.story.content.title }}</h1>
-    <markdown-item :input="this.story.content.text" />
+    <h1>{{ story.content.title }}</h1>
+    <markdown-item :input="story.content.text" />
   </section>
 </template>
 
