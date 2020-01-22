@@ -51,7 +51,10 @@ module.exports = {
     [
       "storyblok-nuxt",
       {
-        accessToken: process.env.PREVIEWKEY,
+        accessToken:
+          process.env.NODE_ENV === "production" // Generate new token
+            ? process.env.PUBLICKEY
+            : process.env.PREVIEWKEY,
         cacheProvider: "memory"
       }
     ]
