@@ -9,13 +9,13 @@ body
   font-size: 17px
   font-size: calc(19px + (22 - 19) * ((100vw - 700px) / (1400 - 700)))
 
-h1, h2, h3, p
-  overflow-wrap: normal
-  word-wrap: normal
+h1, h2, h3, p, a
+  word-wrap: break-word
+  overflow-wrap: break-word
   word-break: normal
-  hyphens: normal
+  hyphens: auto
 
-li, h1, h2, h3, p, a, a:link, a:visited, a:hover, a:active, span, input
+li, h1, h2, h3, p, a, a:link, a:visited, a:hover, a:active, span, input, button
   font-family: Helvetica, Arial, sans-serif
   font-size: 1em
   line-height: 1.5
