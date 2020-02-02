@@ -1,14 +1,13 @@
 import Vue from "vue"
 
-/*eslint-disable */
-Vue.filter("transformImage", (image, option) => {
-  if (!image) return ""
-  if (!option) return ""
-  let imageService = "//img2.storyblok.com/"
-  let path = image.replace("//a.storyblok.com", "")
-  return imageService + option + path
+Vue.filter("resize", (image, size) => {
+  if (typeof image !== "undefined") {
+    return (
+      "//img2.storyblok.com/" + size + image.replace("//a.storyblok.com", "")
+    )
+  }
+  return null
 })
-/* eslint-enable */
 
 Vue.filter("dashify", function(value) {
   if (typeof value === "undefined") {
