@@ -18,3 +18,21 @@ header
       padding-right: 1em
   .nuxt-link-exact-active
     text-decoration: underline
+
+// Important since overriding interactions
+.desktop
+  display: none
+  @media screen and ( max-width: $breakpoint-mobile)
+    display: none !important
+.mobile
+  display: none
+  @media screen and ( max-width: $breakpoint-mobile)
+    display: block !important
+.horizontal
+  display: none
+  @media screen and (orientation: landscape)
+    display: block !important
+.vertical
+  display: none
+  @media screen and (orientation: portrait)
+    display: block !important
