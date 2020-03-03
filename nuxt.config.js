@@ -1,4 +1,5 @@
 const pkg = require("./package")
+const axios = require("axios")
 require("dotenv").config()
 
 module.exports = {
@@ -57,7 +58,8 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    ["@nuxtjs/pwa"],
+    "@nuxtjs/pwa",
+    "@nuxtjs/axios",
     // ["@nuxtjs/google-tag-manager", { id: process.env.GOOGLE_GTM }],
     [
       "@bazzite/nuxt-optimized-images",
@@ -68,7 +70,7 @@ module.exports = {
       {
         accessToken:
           process.env.NODE_ENV === "production" // Generate new token
-            ? process.env.PUBLICKEY
+            ? process.env.PREVIEWKEY
             : process.env.PREVIEWKEY,
         cacheProvider: "memory"
       }
@@ -78,7 +80,7 @@ module.exports = {
     routes: function(callback) {
       const token = process.env.PREVIEWKEY
       const per_page = 1000
-      const version = "published"
+      const version = "draft"
       let cache_version = 0
 
       let page = 1

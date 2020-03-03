@@ -15,6 +15,7 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.9.5",
     "@nuxtjs/google-tag-manager": "^2.3.1",
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^6.0.3",
