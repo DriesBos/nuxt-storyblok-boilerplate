@@ -12,6 +12,6 @@
 
 <script>
 export default {
-  name: "TheHeader"
+  name: "TheNavigation"
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <the-header />
+    <the-navigation />
     <transition name="pages" mode="out-in">
       <nuxt />
     </transition>
@@ -8,11 +8,11 @@
 </template>
 
 <script>
-import TheHeader from "~/components/TheHeader.vue"
+import TheNavigation from "~/components/TheNavigation.vue"
 
 export default {
   components: {
-    "the-header": TheHeader
+    "the-navigation": TheNavigation
   }
 }
 </script>
