@@ -44,7 +44,6 @@ export default {
     return {
       story: { content: {} }
     }
-  },
-  mounted() {}
+  }
 }
 </script>

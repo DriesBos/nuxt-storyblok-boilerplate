@@ -48,9 +48,6 @@ export default {
     return {
       stories: { content: {} }
     }
-  },
-  mounted() {
-    // console.log(this.stories)
   }
 }
 </script>
