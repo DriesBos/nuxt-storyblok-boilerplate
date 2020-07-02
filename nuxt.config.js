@@ -17,6 +17,11 @@ module.exports = {
         content: "width=device-width, initial-scale=1, viewport-fit=cover"
       },
       {
+        hid: "description",
+        name: "description",
+        content: pkg.description
+      },
+      {
         name: "mobile-web-app-capable",
         content: "yes"
       },
@@ -27,8 +32,7 @@ module.exports = {
       {
         name: "apple-mobile-web-app-status-bar-style",
         content: "black-translucent"
-      },
-      { hid: "description", name: "description", content: pkg.description }
+      }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
@@ -36,17 +40,17 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#fff" },
+  loading: false,
 
   /*
    ** Global CSS
    */
   css: [
     "@/assets/styles/reset.css",
-    "@/assets/styles/body.sass",
     "@/assets/styles/transitions.sass",
+    "@/assets/styles/variables.sass",
     "@/assets/styles/typography.sass",
-    "@/assets/styles/variables.sass"
+    "@/assets/styles/body.sass"
   ],
 
   /*
@@ -60,7 +64,7 @@ module.exports = {
   modules: [
     "@nuxtjs/pwa",
     "@nuxtjs/axios",
-    // ["@nuxtjs/google-tag-manager", { id: process.env.GOOGLE_GTM }],
+    "vue-scrollto/nuxt",
     [
       "@bazzite/nuxt-optimized-images",
       { optimizedImages: { optimizeImages: true, optimizeImagesInDev: true } } // Test compression by setting to true first
@@ -164,5 +168,13 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  buildModules: [
+    [
+      "@nuxtjs/google-analytics",
+      {
+        id: process.env.GA_ID
+      }
+    ]
+  ]
 }
