@@ -15,9 +15,11 @@ import storyblokLivePreview from "@/mixins/storyblokLivePreview"
 export default {
   mixins: [storyblokLivePreview],
   asyncData(context) {
+    let version =
+      context.query._storyblok || context.isDev ? "draft" : "published"
     return context.app.$storyapi
       .get("cdn/stories/home", {
-        version: "draft"
+        version: version
       })
       .then(res => {
         return res.data
