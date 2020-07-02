@@ -16,13 +16,14 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/google-analytics": "^2.2.3",
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^6.0.3",
     "marked": "^0.8.2",
     "nuxt": "^2.13.2",
     "storyblok-nuxt": "^1.2.0",
-    "vue-scrollto": "^2.17.1",
-    "@nuxtjs/google-analytics": "^2.2.3"
+    "vue-lazyload": "^1.3.3",
+    "vue-scrollto": "^2.17.1"
   },
   "devDependencies": {
     "@bazzite/nuxt-optimized-images": "^0.4.0",
