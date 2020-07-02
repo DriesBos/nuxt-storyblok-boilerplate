@@ -1,6 +1,6 @@
 {
   "name": "nuxt-storyblok-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "boilerplate for upcoming projects",
   "author": "Dries Bos",
   "private": true,
@@ -12,13 +12,14 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "deploy": "nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
     "@nuxtjs/google-analytics": "^2.2.3",
     "@nuxtjs/pwa": "^2.6.0",
-    "cross-env": "^6.0.3",
+    "gsap": "^3.3.1",
     "marked": "^0.8.2",
     "nuxt": "^2.13.2",
     "storyblok-nuxt": "^1.2.0",
@@ -30,6 +31,7 @@
     "babel-eslint": "^10.0.3",
     "css-loader": "^3.6.0",
     "dotenv": "^8.2.0",
+    "cross-env": "^6.0.3",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-loader": "^3.0.4",
