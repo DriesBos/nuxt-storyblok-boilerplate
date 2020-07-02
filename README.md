@@ -9,7 +9,6 @@
 - [X] Install SASS deps
 - [X] Configure linting + prettier
 - [ ] Init testing (jest?)
-- [X] Init TypeScript
 - [X] Markdown Component
 - [X] Image optimalisation (compression + rendering)
 - [ ] Scroll animation / animationtriggering solution (vanilla/velocity/etc)
