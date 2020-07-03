@@ -21,9 +21,9 @@ export default {
     let version =
       context.query._storyblok || context.isDev ? "draft" : "published"
     return context.app.$storyapi
-      .get("cdn/stories/", {
+      .get("cdn/stories", {
         version: version,
-        starts_with: "blog"
+        starts_with: "blog/"
       })
       .then(res => {
         return res.data
