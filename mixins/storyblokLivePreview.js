@@ -6,7 +6,7 @@ export default {
           this.story.content = event.story.content
         }
       } else if (!event.slugChanged) {
-        window.location.reload()
+        window.location.reload(true)
       }
     })
   }

@@ -1,8 +1,9 @@
 <template>
-  <section>
+  <div v-editable="story.content" class="blog-post">
     <h1>{{ story.content.title }}</h1>
-    <p>{{ story.content.text }}</p>
-  </section>
+    <p>{{ story.content.excerpt }}</p>
+    <img :src="story.content.cover_image.filename" alt="" />
+  </div>
 </template>
 
 <script>
@@ -41,6 +42,9 @@ export default {
     return {
       story: { content: {} }
     }
+  },
+  mounted() {
+    console.log(this.story.content)
   }
 }
 </script>

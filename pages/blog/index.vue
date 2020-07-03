@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section v-editable="stories.content">
     <p>Blog List</p>
     <ul>
       <!-- prettier-ignore -->
