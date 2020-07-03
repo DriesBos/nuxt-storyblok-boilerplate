@@ -1,8 +1,8 @@
 # nuxt-storyblok-boilerplate
 
-> boilerplate for upcoming projects
+Boilerplate for using VueJS, NuxtJS headless with Storyblok CMS via REST API hosted on Netlify
 
-## ToDo
+## To Do
 
 ```bash
 - [X] Update gitnore (vue,osx,node,nuxt,sass,macos)
@@ -59,4 +59,4 @@ $ npm audit fix
 * Add secrets to env
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) and [Storyblok docs](https://www.storyblok.com/docs) and [Netlify docs](https://docs.netlify.com/).
+For detailed explanation on how things work, read [Nuxt docs](https://nuxtjs.org) and [Storyblok docs](https://www.storyblok.com/docs) and [Netlify docs](https://docs.netlify.com/).
