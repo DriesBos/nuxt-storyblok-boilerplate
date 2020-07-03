@@ -9,13 +9,14 @@
 - [X] Install SASS deps
 - [X] Configure linting + prettier
 - [ ] Init testing (jest?)
+- [X] Init TypeScript (removed due small scale)
 - [X] Markdown Component
 - [X] Image optimalisation (compression + rendering)
-- [ ] Scroll animation / animationtriggering solution (vanilla/velocity/etc)
-- [ ] Init Netlify/Heroku/ZEIT
-- [ ] SSL redirection (or via server)
-- [X] Google Analytics -> Google gtag
-- [ ] Connect meta + seo data to StoryBlokCMS
+- [X] Scroll animation / animationtriggering solution (GSAP + Plugins)
+- [X] Init Netlify
+- [X] SSL redirection (via Netlify)
+- [X] Google Analytics
+- [X] Connect meta + seo data to StoryBlokCMS
 ```
 
 ## Build Setup
@@ -39,23 +40,23 @@ $ npm run lint
 
 # Lint fixing
 $ npm run lintfix
+
+# NPM vulnerabilities audit
+$ npm audit fix
 ```
 
 ## Nuxt Config
 
 ```bash
-* Add Google Tag Manager ID
-* Configure responsive-loader by setting image sizes
-* Test image serving + resizing (temp set optimizeImagesInDev to true).
+* Add Google Analytics ID
+* Add Storyblok secrets
 ```
 
-## Heroku Config
+## Netlify Config
 
 ```bash
-$ heroku config:set NPM_CONFIG_PRODUCTION=false
-$ heroku config:set HOST=0.0.0.0
-$ heroku config:set NODE_ENV=production
-# Continue to set Google GTM + Storyblok API Keys
+* Add build commants
+* Add secrets to env
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) and [Storyblok docs](https://www.storyblok.com/docs) and [Heroku docs](https://devcenter.heroku.com/categories/reference).
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) and [Storyblok docs](https://www.storyblok.com/docs) and [Netlify docs](https://docs.netlify.com/).
