@@ -57,6 +57,7 @@ $ npm audit fix
 ```bash
 * Add build commants
 * Add secrets to env
+* If SSR: add Storyblok webhook
 ```
 
 For detailed explanation on how things work, read [Nuxt docs](https://nuxtjs.org) and [Storyblok docs](https://www.storyblok.com/docs) and [Netlify docs](https://docs.netlify.com/).
