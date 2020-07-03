@@ -50,6 +50,7 @@ $ npm audit fix
 ```bash
 * Add Google Analytics ID
 * Add Storyblok secrets
+* Rename title + description in package.json
 ```
 
 ## Netlify Config
