@@ -1,5 +1,5 @@
 <template>
-  <section v-editable="stories.content">
+  <section>
     <p>Blog List</p>
     <ul>
       <!-- prettier-ignore -->
@@ -18,11 +18,9 @@ import storyblokLivePreview from "@/mixins/storyblokLivePreview"
 export default {
   mixins: [storyblokLivePreview],
   asyncData(context) {
-    let version =
-      context.query._storyblok || context.isDev ? "draft" : "published"
     return context.app.$storyapi
       .get("cdn/stories", {
-        version: version,
+        version: process.env.NODE_ENV == "production" ? "published" : "draft",
         starts_with: "blog/"
       })
       .then(res => {
