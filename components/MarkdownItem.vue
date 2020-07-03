@@ -24,6 +24,8 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
+.markdown p
+  white-space: pre-line
 // Prefer style handling by cascading css (typography.sass) as much as possible.
 </style>
