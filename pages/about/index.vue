@@ -1,8 +1,12 @@
 <template>
-  <section>
-    <h1>{{ story.content.title }}</h1>
-    <markdown-item :input="story.content.text" />
-  </section>
+  <div>
+    <component
+      :is="story.content.component | dashify"
+      v-if="story.content.component"
+      :key="story.content._uid"
+      :blok="story.content"
+    ></component>
+  </div>
 </template>
 
 <script>
