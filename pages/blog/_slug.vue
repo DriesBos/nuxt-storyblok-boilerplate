@@ -13,8 +13,7 @@ export default {
   asyncData(context) {
     let version =
       context.query._storyblok || context.isDev ? "draft" : "published"
-    let endpoint = `cdn/stories/blog/${context.params.slug}`
-
+    let endpoint = "cdn/stories/blog/" + context.params.slug
     return context.app.$storyapi
       .get(endpoint, {
         version: version
