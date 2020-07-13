@@ -1,4 +1,3 @@
-const pkg = require("./package")
 const axios = require("axios")
 require("dotenv").config()
 
@@ -9,7 +8,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: pkg.name, // Change in package.json files
+    title: "Inert Site Title", // Change in package.json files
     meta: [
       { charset: "utf-8" },
       {
@@ -19,7 +18,7 @@ module.exports = {
       {
         hid: "description",
         name: "description",
-        content: pkg.description // Change in package.json files
+        content: "Insert Site Descr" // Change in package.json files
       },
       {
         name: "mobile-web-app-capable",
@@ -41,6 +40,15 @@ module.exports = {
    ** Customize the progress-bar color
    */
   loading: false,
+
+  /*
+   ** Scroll behaviour (depreciated but new method seems buggy (app folder))
+   */
+  router: {
+    scrollBehavior: function() {
+      return { x: 0, y: 0 }
+    }
+  },
 
   /*
    ** Global CSS
