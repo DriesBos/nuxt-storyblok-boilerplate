@@ -147,6 +147,7 @@ module.exports = {
     transpile: ["gsap"]
   },
   buildModules: [
+    "@nuxtjs/pwa"
     // [
     //   "@nuxtjs/google-analytics",
     //   {
