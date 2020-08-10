@@ -1,10 +1,11 @@
 <template>
-  <div>
+  <!-- Change if needed -->
+  <main lang="en-US">
     <the-navigation />
     <transition name="pages" mode="out-in">
       <nuxt />
     </transition>
-  </div>
+  </main>
 </template>
 
 <script>
