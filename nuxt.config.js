@@ -1,6 +1,11 @@
 const axios = require("axios")
 require("dotenv").config()
 
+// TODO: Add site title
+// TODO: Add .env secrets
+// TODO: Add 512px "icon.png" to static
+// TODO: Add Google Analytics env
+
 module.exports = {
   mode: "universal",
 

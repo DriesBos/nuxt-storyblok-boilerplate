@@ -17,7 +17,7 @@ Boilerplate for using VueJS, NuxtJS headless with Storyblok CMS via REST API hos
 - [X] SSL redirection (via Netlify)
 - [X] Google Analytics
 - [X] Connect meta + seo data to StoryBlokCMS
-- [ ] Init PWA / serviceworker at final stage
+- [X] Init PWA / serviceworker at final stage
 ```
 
 ## Build Setup
