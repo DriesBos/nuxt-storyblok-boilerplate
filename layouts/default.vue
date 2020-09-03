@@ -1,6 +1,6 @@
 <template>
   <!-- Change if needed -->
-  <main lang="en-US">
+  <main lang="en-US" translate="no">
     <the-navigation />
     <transition name="pages" mode="out-in">
       <nuxt />
