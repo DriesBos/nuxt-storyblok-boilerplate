@@ -8,8 +8,6 @@ require("dotenv").config()
 // TODO: Add rel="noreferrer" to all links (prevents window object access)
 
 module.exports = {
-  mode: "universal",
-
   /*
    ** Headers of the page
    */
