@@ -8,9 +8,6 @@ require("dotenv").config()
 // TODO: Add rel="noreferrer" to all links (prevents window object access)
 
 module.exports = {
-  /*
-   ** Headers of the page
-   */
   head: {
     title: "Inert Site Title", // Change in package.json files
     meta: [
@@ -45,23 +42,10 @@ module.exports = {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
-  /*
-   ** Customize the progress-bar color
-   */
   loading: false,
 
-  /*
-   ** Scroll behaviour (depreciated but new method seems buggy (app folder))
-   */
-  router: {
-    scrollBehavior: function() {
-      return { x: 0, y: 0 }
-    }
-  },
+  components: true,
 
-  /*
-   ** Global CSS
-   */
   css: [
     "@/assets/styles/reset.css",
     "@/assets/styles/transitions.sass",
@@ -70,14 +54,8 @@ module.exports = {
     "@/assets/styles/body.sass"
   ],
 
-  /*
-   ** Plugins to load before mounting the App
-   */
   plugins: ["~/plugins/components", "~/plugins/filters"],
 
-  /*
-   ** Nuxt.js modules
-   */
   modules: [
     "@nuxtjs/axios",
     "vue-scrollto/nuxt",
@@ -96,9 +74,7 @@ module.exports = {
       }
     ]
   ],
-  /*
-   ** Nuxt Generate
-   */
+
   generate: {
     routes: function(callback) {
       const token = process.env.PUBLICKEY
@@ -134,9 +110,7 @@ module.exports = {
         })
     }
   },
-  /*
-   ** Build configuration
-   */
+
   build: {
     /*
      ** You can extend webpack config here
@@ -155,6 +129,7 @@ module.exports = {
     // Transpile GSAP for server side rendering
     transpile: ["gsap"]
   },
+
   buildModules: [
     "@nuxtjs/pwa"
     // [

@@ -11,12 +11,8 @@
 
 <script>
 import storyblokLivePreview from "@/mixins/storyblokLivePreview"
-import MarkdownItem from "@/components/MarkdownItem.vue"
 
 export default {
-  components: {
-    "markdown-item": MarkdownItem
-  },
   mixins: [storyblokLivePreview],
   asyncData(context) {
     return context.app.$storyapi
