@@ -29,25 +29,41 @@ h1, h2, h3, p, a
   overflow-wrap: normal
   hyphens: none
 
-li, h1, h2, h3, p, a, a:link, a:visited, a:hover, a:active, span, input, button
+li, h1, h2, h3, h4, h5, blockquote, p, a, a:link, a:visited, a:hover, a:active, span, input, button
   font-family: Helvetica, Arial, sans-serif
-  font-size: 1em
   line-height: 1.5
-  color: black
+  color: $color
   font-style: normal
   font-weight: normal
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-a
-  color: black
-  text-decoration: underline
-
-strong
-  font-weight: bold
-
-em
-  font-style: italic
+.markdown
+  p
+    font-size: $type-size-p
+  h1
+    font-size: $type-size-h1
+  h2
+    font-size: $type-size-h2
+  h3
+    font-size: $type-size-h3
+  h4
+    font-size: $type-size-h4
+  h5
+    font-size: $type-size-h5
+  a
+    color: $color
+    text-decoration: underline
+  strong
+    font-weight: bold
+  em
+    font-style: italic
+  blockquote, blockquote p
+    font-size: $type-size-blockquote
+  p, h1, h2, h3, h4, h5, blockquote
+    margin-bottom: $lineheight
+  p
+    min-height: $lineheight
 
 .ellipsis
   overflow: hidden

@@ -1,6 +1,6 @@
 <template>
-  <div v-editable="blok" class="column feature">
-    <p>{{ blok.name }}</p>
+  <div v-editable="blok" class="item-Text">
+    <markdown :input="blok.text" />
   </div>
 </template>
 
