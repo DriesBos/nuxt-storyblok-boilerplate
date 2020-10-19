@@ -1,7 +1,7 @@
 {
   "name": "nuxt-storyblok-boilerplate",
-  "version": "1.0.1",
-  "description": "boilerplate for upcoming projects",
+  "version": "1.1.0",
+  "description": "Nuxt Storyblok boilerplate",
   "author": "Dries Bos",
   "private": true,
   "scripts": {
