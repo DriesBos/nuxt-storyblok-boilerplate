@@ -54,11 +54,17 @@ module.exports = {
     "@/assets/styles/body.sass"
   ],
 
-  plugins: ["~/plugins/components", "~/plugins/filters"],
+  plugins: [
+    "~/plugins/components",
+    "~/plugins/filters"
+    // "~/plugins/vue-lazyload",
+    // "~/plugins/vue-scrollto"
+  ],
 
   modules: [
     "@nuxtjs/axios",
-    "vue-scrollto/nuxt",
+    // "vue-scrollto/nuxt",
+    // 'vue-scrollto/nuxt',
     [
       "@bazzite/nuxt-optimized-images",
       { optimizedImages: { optimizeImages: true, optimizeImagesInDev: true } } // Test compression by setting to true first

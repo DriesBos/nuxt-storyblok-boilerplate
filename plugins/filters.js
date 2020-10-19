@@ -1,6 +1,6 @@
 import Vue from "vue"
-import VueLazyload from "vue-lazyload"
 
+// Storyblok image optimisation
 Vue.filter("transformImage", (image, option) => {
   if (!image) return ""
   if (!option) return ""
@@ -8,10 +8,6 @@ Vue.filter("transformImage", (image, option) => {
   let pathOne = image.replace("https://a.storyblok.com", "")
   let pathTwo = pathOne.replace("//a.storyblok.com", "")
   return imageService + option + pathTwo
-})
-
-Vue.use(VueLazyload, {
-  preLoad: 2
 })
 
 Vue.filter("dashify", function(value) {
@@ -26,4 +22,32 @@ Vue.filter("dashify", function(value) {
     .replace(/[ _]/g, "-")
 
   return "blok-" + dashified
+})
+
+// Remove first of array
+Vue.filter("removeFirst", function(values) {
+  return values.slice(1)
+})
+
+// Show X of array
+Vue.filter("showOnlyFirstX", function(values, amount) {
+  return values.slice(0, amount)
+})
+
+// Shuffle array
+Vue.filter("shuffle", function(values) {
+  for (var i = values.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1))
+    var temp = values[i]
+    values[i] = values[j]
+    values[j] = temp
+  }
+  return values
+})
+
+// Remove duplicates
+Vue.filter("unique", function(values) {
+  return values.filter(function(element, index, self) {
+    return index == self.indexOf(element)
+  })
 })
