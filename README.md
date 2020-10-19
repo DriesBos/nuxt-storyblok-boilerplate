@@ -8,6 +8,7 @@ Boilerplate for using NuxtJS with Storyblok CMS.
 - Storyblok image compression
 - Includes markdown component
 - Serviceworker module (PWA)
+- Secure your secrets by Nuxt runtime config
 - Optional scrollto and lazyload plugins
 - Optional depository of filter functions
 - Optional GSAP and jQuery
