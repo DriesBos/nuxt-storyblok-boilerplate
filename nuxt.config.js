@@ -63,8 +63,8 @@ module.exports = {
   // Register CSS files
   css: [
     "@/assets/styles/reset.css",
+    // "@/assets/styles/form-reset.css",
     "@/assets/styles/transitions.sass",
-    "@/assets/styles/variables.sass",
     "@/assets/styles/typography.sass",
     "@/assets/styles/body.sass"
   ],
@@ -137,6 +137,23 @@ module.exports = {
     fallback: true
   },
 
+  // Modules only run on build
+  buildModules: [
+    "@nuxtjs/pwa",
+    "@nuxtjs/style-resources"
+    // [
+    //   "@nuxtjs/google-analytics",
+    //   {
+    //     id: process.env.GA_ID
+    //   }
+    // ]
+  ],
+
+  // Settings for "@nuxtjs/style-resources"
+  styleResources: {
+    sass: "./assets/styles/vars/*.sass"
+  },
+
   // Run on build
   build: {
     /*
@@ -155,16 +172,5 @@ module.exports = {
     },
     // Transpile GSAP for server side rendering
     transpile: ["gsap"]
-  },
-
-  // Modules only run on build
-  buildModules: [
-    "@nuxtjs/pwa"
-    // [
-    //   "@nuxtjs/google-analytics",
-    //   {
-    //     id: process.env.GA_ID
-    //   }
-    // ]
-  ]
+  }
 }

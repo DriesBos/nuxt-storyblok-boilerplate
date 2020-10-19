@@ -9,6 +9,9 @@ Boilerplate for using NuxtJS with Storyblok CMS.
 - Includes markdown component
 - Serviceworker module (PWA)
 - Secure your secrets by Nuxt runtime config
+- SASS
+- Auto import CSS variables/mixins/functions
+- CSS reset sheet + optional form-reset
 - Optional scrollto and lazyload plugins
 - Optional depository of filter functions
 - Optional GSAP and jQuery

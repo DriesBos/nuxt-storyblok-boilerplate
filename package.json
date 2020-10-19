@@ -16,16 +16,17 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/google-analytics": "^2.2.3",
+    "gsap": "^3.5.1",
+    "jquery": "^3.5.1",
     "marked": "^0.8.2",
     "nuxt": "^2.14.7",
     "storyblok-nuxt": "^1.3.0",
     "vue-lazyload": "^1.3.3",
-    "vue-scrollto": "^2.19.1",
-    "gsap": "^3.5.1",
-    "jquery": "^3.5.1"
+    "vue-scrollto": "^2.19.1"
   },
   "devDependencies": {
     "@bazzite/nuxt-optimized-images": "^0.4.0",
+    "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/pwa": "^3.2.2",
     "babel-eslint": "^10.0.3",
     "css-loader": "^3.6.0",
