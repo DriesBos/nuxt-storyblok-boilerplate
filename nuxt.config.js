@@ -108,7 +108,9 @@ module.exports = {
               callback(null, routes)
             })
         })
-    }
+    },
+    // Fallback to prevent Netlify from directing to its own error pages
+    fallback: true
   },
 
   build: {
