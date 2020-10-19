@@ -1,10 +1,8 @@
 const axios = require("axios")
-require("dotenv").config()
 
 // TODO: Add site title
-// TODO: Add .env secrets
 // TODO: Add 512px "icon.png" to static
-// TODO: Add Google Analytics env
+// TODO: Add Google Analytics variable to buildModules
 // TODO: Add rel="noreferrer" to all links (prevents window object access)
 
 // Add the "Lazy" prefix in your templates to enable lazyload components
@@ -42,6 +40,18 @@ module.exports = {
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+  },
+
+  // Runtime config
+  // Exposed to frontend
+  publicRuntimeConfig: {
+    nodeEnv: process.env.NODE_ENV
+    // gaId: process.env.GA_ID
+  },
+  // Secret
+  privateRuntimeConfig: {
+    previewKey: process.env.PREVIEWKEY,
+    publicKey: process.env.PUBLICKEY
   },
 
   // Loading animation
