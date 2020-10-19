@@ -1,6 +1,7 @@
 const axios = require("axios")
 
-// TODO: Add site title
+// TODO: Add site title + description
+// TODO: Add OG image in default layout
 // TODO: Add 512px "icon.png" to static
 // TODO: Add Google Analytics variable to buildModules
 // TODO: Add rel="noreferrer" to all links (prevents window object access)
