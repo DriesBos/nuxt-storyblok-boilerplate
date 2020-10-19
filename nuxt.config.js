@@ -7,6 +7,8 @@ require("dotenv").config()
 // TODO: Add Google Analytics env
 // TODO: Add rel="noreferrer" to all links (prevents window object access)
 
+// Add the "Lazy" prefix in your templates to enable lazyload components
+
 module.exports = {
   head: {
     title: "Inert Site Title", // Change in package.json files
@@ -42,10 +44,13 @@ module.exports = {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
+  // Loading animation
   loading: false,
 
+  // Auto import components
   components: true,
 
+  // Register CSS files
   css: [
     "@/assets/styles/reset.css",
     "@/assets/styles/transitions.sass",
@@ -54,6 +59,7 @@ module.exports = {
     "@/assets/styles/body.sass"
   ],
 
+  // Register plugins
   plugins: [
     "~/plugins/components",
     "~/plugins/filters"
@@ -61,6 +67,7 @@ module.exports = {
     // "~/plugins/vue-scrollto"
   ],
 
+  // Register modules
   modules: [
     "@nuxtjs/axios",
     // "vue-scrollto/nuxt",
@@ -81,6 +88,7 @@ module.exports = {
     ]
   ],
 
+  // Generate routes
   generate: {
     routes: function(callback) {
       const token = process.env.PUBLICKEY
@@ -119,6 +127,7 @@ module.exports = {
     fallback: true
   },
 
+  // Run on build
   build: {
     /*
      ** You can extend webpack config here
@@ -138,6 +147,7 @@ module.exports = {
     transpile: ["gsap"]
   },
 
+  // Modules only run on build
   buildModules: [
     "@nuxtjs/pwa"
     // [
