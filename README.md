@@ -16,7 +16,7 @@ Boilerplate for using VueJS, NuxtJS with Storyblok CMS. Configured for SASS.
 - Optional GSAP functions (scrollSpeed, rotate, horizontalScroll, etc)
 - Optional depository of filter functions
 - Optional GSAP and jQuery
-- Optional Google Analytics module
+- Optional modules (Google Analytics)
 ```
 
 ## Build Setup
