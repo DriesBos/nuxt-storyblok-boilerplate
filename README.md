@@ -1,23 +1,17 @@
 # nuxt-storyblok-boilerplate
 
-Boilerplate for using VueJS, NuxtJS headless with Storyblok CMS via REST API hosted on Netlify
+Boilerplate for using NuxtJS with Storyblok CMS.
 
-## To Do
+## Features
 
 ```bash
-- [X] Update gitnore (vue,osx,node,nuxt,sass,macos)
-- [X] Install SASS deps
-- [X] Configure linting + prettier
-- [ ] Init testing (jest?)
-- [X] Init TypeScript (removed due small scale)
-- [X] Markdown Component
-- [X] Image optimalisation (compression + rendering)
-- [X] Scroll animation / animationtriggering solution (GSAP + Plugins)
-- [X] Init Netlify
-- [X] SSL redirection (via Netlify)
-- [X] Google Analytics
-- [X] Connect meta + seo data to StoryBlokCMS
-- [X] Init PWA / serviceworker at final stage
+- Storyblok image compression
+- Includes markdown component
+- Serviceworker module (PWA)
+- Optional scrollto and lazyload plugins
+- Optional depository of filter functions
+- Optional GSAP and jQuery
+- Optional Google Analytics module
 ```
 
 ## Build Setup
@@ -50,16 +44,16 @@ $ npm audit fix
 
 ```bash
 * Add Google Analytics ID
-* Add Storyblok secrets
+* Add Storyblok secrets to a .env file
 * Rename title + description in package.json
 ```
 
 ## Netlify Config
 
 ```bash
-* Add build commants
-* Add secrets to env
-* If SSR: add Storyblok webhook
+* Add build command
+* Add secrets to variables
+* Add Storyblok webhook (generate webhook in the Storyblok settings)
 ```
 
 For detailed explanation on how things work, read [Nuxt docs](https://nuxtjs.org) and [Storyblok docs](https://www.storyblok.com/docs) and [Netlify docs](https://docs.netlify.com/).
