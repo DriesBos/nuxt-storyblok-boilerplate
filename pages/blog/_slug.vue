@@ -1,16 +1,16 @@
 <template>
-  <div v-editable="story.content" class="blog-post">
-    <h1>{{ story.content.title }}</h1>
-    <p>{{ story.content.excerpt }}</p>
-    <img :src="story.content.cover_image.filename" alt="" />
+  <div v-editable="story.content" class="page-Blog_Slug">
+    <component
+      :is="blok.component | dashify"
+      v-for="blok in story.content.body"
+      :key="blok._uid"
+      :blok="blok"
+    ></component>
   </div>
 </template>
 
 <script>
-import storyblokLivePreview from "@/mixins/storyblokLivePreview"
-
 export default {
-  mixins: [storyblokLivePreview],
   asyncData(context) {
     let endpoint = "cdn/stories/blog/" + context.params.slug
     return context.app.$storyapi
@@ -41,8 +41,10 @@ export default {
       story: { content: {} }
     }
   },
-  mounted() {
-    console.log(this.story.content)
+  head() {
+    return {
+      title: this.story.name + " — SITE TITLE"
+    }
   }
 }
 </script>

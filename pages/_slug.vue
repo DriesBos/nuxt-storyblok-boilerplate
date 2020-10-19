@@ -1,18 +1,17 @@
 <template>
-  <section v-editable="story.content">
+  <div v-editable="story.content" class="page-Slug">
     <component
       :is="story.content.component | dashify"
       v-if="story.content.component"
       :key="story.content._uid"
       :blok="story.content"
     ></component>
-  </section>
+  </div>
 </template>
 
 <script>
 export default {
   asyncData(context) {
-    // Load the JSON from the API
     return context.app.$storyapi
       .get(`cdn/stories/${context.params.slug}`, {
         version: process.env.NODE_ENV == "production" ? "published" : "draft"
@@ -29,6 +28,11 @@ export default {
   },
   data() {
     return { story: { content: {} } }
+  },
+  head() {
+    return {
+      title: this.story.name + " — SITE TITLE"
+    }
   }
 }
 </script>

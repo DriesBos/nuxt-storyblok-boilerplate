@@ -1,5 +1,5 @@
 <template>
-  <div v-editable="story.content">
+  <div v-editable="story.content" class="page-Index">
     <component
       :is="story.content.component | dashify"
       v-if="story.content.component"
@@ -41,6 +41,11 @@ export default {
   data() {
     return {
       story: { content: {} }
+    }
+  },
+  head() {
+    return {
+      title: this.story.name + " — SITE TITLE"
     }
   }
 }
