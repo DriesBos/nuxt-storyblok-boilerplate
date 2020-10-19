@@ -1,7 +1,7 @@
 const axios = require("axios")
 
 // TODO: Add site title + description
-// TODO: Add OG image in default layout
+// TODO: Add 1200x630 "image.png" to static
 // TODO: Add 512px "icon.png" to static
 // TODO: Add Google Analytics variable to buildModules
 // TODO: Add rel="noreferrer" to all links (prevents window object access)
@@ -38,9 +38,10 @@ module.exports = {
         // Change if needed
         name: "theme-color",
         content: "#ffffff"
-      }
+      },
+      { property: "og:image", content: "/image.png" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/png", href: "/icon.png" }]
   },
 
   // Runtime config
