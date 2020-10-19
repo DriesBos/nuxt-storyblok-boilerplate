@@ -12,6 +12,8 @@ Boilerplate for using VueJS, NuxtJS with Storyblok CMS. Configured for SASS.
 - Auto import CSS variables/mixins/functions
 - CSS reset sheet + optional form-reset
 - Optional scrollto and lazyload plugins
+- Optional CursorInteraction (GSAP)
+- Optional GSAP functions (scrollSpeed, rotate, horizontalScroll, etc)
 - Optional depository of filter functions
 - Optional GSAP and jQuery
 - Optional Google Analytics module
