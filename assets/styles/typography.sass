@@ -3,7 +3,18 @@
 //   src: url('~assets/fonts/') format('')
 //   font-weight: normal
 //   font-style: normal
-//   font-display: swap
+
+// @font-face
+//   font-family: ''
+//   src: url('~assets/fonts/') format('')
+//   font-weight: normal
+//   font-style: italic
+
+// @font-face
+//   font-family: ''
+//   src: url('~assets/fonts/') format('')
+//   font-weight: bold
+//   font-style: normal
 
 // https://www.madebymike.com.au/writing/fluid-type-calc-examples/
 html
@@ -65,7 +76,7 @@ li, h1, h2, h3, h4, h5, blockquote, p, a, a:link, a:visited, a:hover, a:active, 
   p
     min-height: $lineheight
 
-.ellipsis
+.ellipsis // Limit title to one line
   overflow: hidden
   min-width: 0
   text-overflow: ellipsis
@@ -73,3 +84,11 @@ li, h1, h2, h3, h4, h5, blockquote, p, a, a:link, a:visited, a:hover, a:active, 
     white-space: nowrap
     overflow: hidden
     text-overflow: ellipsis
+
+.lineClamp // Limit excerpt to X lines
+  display: -webkit-box
+  -webkit-line-clamp: 3
+  -webkit-box-orient: vertical
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap
