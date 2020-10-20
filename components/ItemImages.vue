@@ -1,5 +1,5 @@
 <template>
-  <div class="item item-Images">
+  <div v-editable="blok" class="item item-Images">
     <ul class="item-Images_list" :data="blok.images.length">
       <li v-for="(image, i) in blok.images" :key="i" class="item-Images_Single">
         <div
@@ -21,7 +21,7 @@ export default {
     blok: Object
   },
   mounted() {
-    console.log(this.blok)
+    // console.log(this.blok)
   }
 }
 </script>
