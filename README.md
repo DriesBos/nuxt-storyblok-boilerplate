@@ -6,7 +6,7 @@ Boilerplate for using VueJS, NuxtJS with Storyblok CMS. Configured for SASS.
 
 ```bash
 - Storyblok image compression
-- Includes markdown component
+- Includes markdown, video and images component
 - Serviceworker module (PWA)
 - Secure your secrets by Nuxt runtime config
 - Auto import CSS variables/mixins/functions
