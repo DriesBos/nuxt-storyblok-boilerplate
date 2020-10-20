@@ -7,7 +7,7 @@
           :class="[blok.ratio, blok.size, blok.fill]"
         >
           <div class="aspectRatioInside">
-            <img :src="image.filename" :alt="image.name" />
+            <img v-lazy="image.filename" class="lazy" :alt="image.name" />
           </div>
         </div>
       </li>
@@ -30,5 +30,5 @@ export default {
 .item
   &-Images
     &_Single
-      // border: 1px solid $support-color
+      // border: 1px solid $color-support
 </style>

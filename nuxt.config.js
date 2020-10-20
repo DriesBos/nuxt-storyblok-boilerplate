@@ -74,8 +74,8 @@ module.exports = {
   // Register plugins
   plugins: [
     "~/plugins/components",
-    "~/plugins/filters"
-    // "~/plugins/vue-lazyload",
+    "~/plugins/filters",
+    "~/plugins/vue-lazyload"
     // "~/plugins/vue-scrollto"
   ],
 
@@ -83,7 +83,6 @@ module.exports = {
   modules: [
     "@nuxtjs/axios",
     // "vue-scrollto/nuxt",
-    // 'vue-scrollto/nuxt',
     [
       "storyblok-nuxt",
       {

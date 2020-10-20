@@ -37,7 +37,7 @@ export default {
         padding: 1rem
         font-size: 1rem
         border: 0
-        border-bottom: 1px solid $support-color
+        border-bottom: 1px solid $color-support
         background: transparent
         width: 100%
         &::placeholder

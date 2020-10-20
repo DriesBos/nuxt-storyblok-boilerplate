@@ -3,8 +3,14 @@ section
   img
     max-width: 100%
 
+.lazy
+  opacity: 0
+  transition: opacity $trans-img
+  &[lazy=loaded]
+    opacity: 1
+
 .item
-  // border: 1px solid $support-color
+  // border: 1px solid $color-support
   margin: 1rem
 
 header
