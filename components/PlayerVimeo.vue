@@ -2,8 +2,6 @@
   <!-- prettier-ignore -->
   <iframe
     :src="'https://player.vimeo.com/video/' + videoid + '?autoplay=' + autoplay + '&muted=true'"
-    width="640"
-    height="360"
     frameborder="0"
     allow="autoplay"
     transparent="true"
