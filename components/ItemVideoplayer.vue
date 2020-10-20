@@ -27,7 +27,7 @@ export default {
     blok: Object
   },
   mounted() {
-    console.log("VIDEOPLAYER", this.blok)
+    // console.log("VIDEOPLAYER", this.blok)
   }
 }
 </script>
