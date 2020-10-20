@@ -85,10 +85,6 @@ module.exports = {
     // "vue-scrollto/nuxt",
     // 'vue-scrollto/nuxt',
     [
-      "@bazzite/nuxt-optimized-images",
-      { optimizedImages: { optimizeImages: true, optimizeImagesInDev: true } } // Test compression by setting to true first
-    ],
-    [
       "storyblok-nuxt",
       {
         accessToken:
@@ -142,7 +138,8 @@ module.exports = {
   // Modules only run on build
   buildModules: [
     "@nuxtjs/pwa",
-    "@nuxtjs/style-resources"
+    "@nuxtjs/style-resources",
+    "@aceforth/nuxt-optimized-images"
     // [
     //   "@nuxtjs/google-analytics",
     //   {
@@ -154,6 +151,11 @@ module.exports = {
   // Settings for "@nuxtjs/style-resources"
   styleResources: {
     sass: "./assets/styles/vars/*.sass"
+  },
+
+  // Settings for "@aceforth/nuxt-optimized-images"
+  optimizedImages: {
+    optimizeImages: true
   },
 
   // Run on build
