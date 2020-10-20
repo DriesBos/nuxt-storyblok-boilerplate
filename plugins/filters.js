@@ -51,3 +51,8 @@ Vue.filter("unique", function(values) {
     return index == self.indexOf(element)
   })
 })
+
+// Uppercase
+Vue.filter("upperCase", function(values) {
+  return values.toUpperCase()
+})
