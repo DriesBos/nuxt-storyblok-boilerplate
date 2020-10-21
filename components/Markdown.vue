@@ -5,11 +5,24 @@
 <script>
 // https://marked.js.org/
 const marked = require("marked")
-// const renderer = new marked.Renderer()
+const renderer = new marked.Renderer()
+
 marked.setOptions({
-  // renderer: new marked.Renderer(),
+  renderer: new marked.Renderer(),
   breaks: true
 })
+
+renderer.link = function(href, title, text) {
+  return (
+    '<a target="_blank" href="' +
+    href +
+    '" title="' +
+    title +
+    '">' +
+    text +
+    "</a>"
+  )
+}
 
 export default {
   name: "MarkdownItem",
@@ -18,7 +31,7 @@ export default {
   },
   computed: {
     compiledMarkdown: function() {
-      return marked(this.input)
+      return marked(this.input, { renderer: renderer })
     }
   }
 }
