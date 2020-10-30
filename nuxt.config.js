@@ -166,10 +166,10 @@ module.exports = {
           loader: "eslint-loader",
           exclude: /(node_modules)/
         })
-        // Fixes dotenv error
-        config.node = {
-          fs: "empty"
-        }
+      }
+      // Fixes dotenv error
+      config.node = {
+        fs: "empty"
       }
     },
     // Transpile GSAP for server side rendering
