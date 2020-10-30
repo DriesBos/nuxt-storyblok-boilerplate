@@ -1,4 +1,5 @@
 const axios = require("axios")
+require("dotenv").config()
 
 // TODO: Add site title + description
 // TODO: Add 1200x630 "image.png" to static
@@ -42,18 +43,6 @@ module.exports = {
       { property: "og:image", content: "/image.png" }
     ],
     link: [{ rel: "icon", type: "image/png", href: "/icon.png" }]
-  },
-
-  // Runtime config
-  // Exposed to frontend
-  publicRuntimeConfig: {
-    nodeEnv: process.env.NODE_ENV
-    // gaId: process.env.GA_ID
-  },
-  // Secret
-  privateRuntimeConfig: {
-    previewKey: process.env.PREVIEWKEY,
-    publicKey: process.env.PUBLICKEY
   },
 
   // Loading animation
@@ -136,7 +125,13 @@ module.exports = {
 
   // Modules only run on build
   buildModules: [
-    "@nuxtjs/pwa",
+    [
+      "@nuxtjs/pwa",
+      {
+        icon: false // disables the icon module due dynamic favicon
+      }
+    ],
+    "@nuxtjs/dotenv",
     "@nuxtjs/style-resources",
     "@aceforth/nuxt-optimized-images"
     // [
@@ -171,6 +166,10 @@ module.exports = {
           loader: "eslint-loader",
           exclude: /(node_modules)/
         })
+        // Fixes dotenv error
+        config.node = {
+          fs: "empty"
+        }
       }
     },
     // Transpile GSAP for server side rendering

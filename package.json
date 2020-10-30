@@ -37,6 +37,7 @@
     "vue-scrollto": "^2.19.1"
   },
   "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
     "prettier": "^1.19.1",
     "eslint": "^7.11.0",
     "eslint-config-prettier": "^6.13.0",
