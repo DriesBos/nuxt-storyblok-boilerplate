@@ -4,7 +4,7 @@
       <div class="section-Error_Content">
         <p>
           Oops! Page not found.<br />
-          Visit <nuxt-link to="/">home</nuxt-link> or see my
+          Visit <nuxt-link to="/">home</nuxt-link> or view my
           <nuxt-link to="/projects">projects</nuxt-link>.
         </p>
       </div>
