@@ -42,7 +42,6 @@ export default {
       let imageService = "//img2.storyblok.com/"
       let pathOne = image.replace("https://a.storyblok.com", "")
       let pathTwo = pathOne.replace("//a.storyblok.com", "")
-
       return imageService + option + pathTwo
     }
   }
