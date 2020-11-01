@@ -29,6 +29,11 @@ Vue.filter("removeFirst", function(values) {
   return values.slice(1)
 })
 
+// Remove specific value of array
+Vue.filter("removeValue", function(values, removeValue) {
+  return values.filter(el => el !== removeValue)
+})
+
 // Show X of array
 Vue.filter("showOnlyFirstX", function(values, amount) {
   return values.slice(0, amount)
