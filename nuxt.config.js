@@ -152,6 +152,11 @@ module.exports = {
     optimizeImages: true
   },
 
+  // Settings for PWA
+  pwa: {
+    icon: false
+  },
+
   // Run on build
   build: {
     /*
