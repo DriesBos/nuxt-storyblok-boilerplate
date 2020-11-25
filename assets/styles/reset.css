@@ -92,6 +92,17 @@ video {
   vertical-align: baseline;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,

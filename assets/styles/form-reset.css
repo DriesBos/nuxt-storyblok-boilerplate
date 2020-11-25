@@ -45,8 +45,11 @@ textarea {
 }
 
 /* Remove the stupid outer glow in Webkit */
-input:focus {
-  outline: 0;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 
 /* Box Sizing Reset
